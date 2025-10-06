@@ -55,7 +55,7 @@
           <h1 class="hero__title" data-split>
             Oxford uslubidagi immersiv ta'lim orqali kelajakni bugunoq kashf eting.
           </h1>
-          <p data-animate>
+          <p data-animate data-split>
             Biz Apple darajasidagi dizayn, sun'iy intellekt yordamidagi mentorlik va futuristik laboratoriyalar orqali
             har bir o'quvchi uchun shaxsiylashtirilgan ta'lim sayohatini yaratamiz.
           </p>
@@ -70,15 +70,15 @@
           </ul>
         </div>
         <div class="hero__visual" data-animate>
-          <div class="hero__planet">
+          <div class="hero__planet" data-parallax-y="18" data-parallax-rotate="26">
             <div class="hero__shine"></div>
             <img src="assets/logo-dark.svg" alt="Oxford Learning Centre markasi" />
           </div>
-          <div class="hero__card">
+          <div class="hero__card" data-parallax-y="-22">
             <p>“Farzandingizni global sahnaga tayyorlaydigan premium ta'lim makoni.”</p>
             <span>— Oxford Learning Centre direktori</span>
           </div>
-          <dl class="hero__stats">
+          <dl class="hero__stats" data-parallax-y="16">
             <div>
               <dt data-value="1200" data-suffix="+">1200+</dt>
               <dd>Xalqaro sertifikat olgan o'quvchilar</dd>
@@ -93,6 +93,10 @@
             </div>
           </dl>
         </div>
+        <div class="hero__scroll" data-animate>
+          <span>Pastga siljiting</span>
+          <div class="hero__scroll-line"></div>
+        </div>
       </section>
 
       <section id="experience" class="section experience">
@@ -105,7 +109,7 @@
           </p>
         </div>
         <div class="experience__grid">
-          <article class="experience__card" data-animate>
+          <article class="experience__card" data-animate data-tilt>
             <h3>AI mentorlik</h3>
             <p>
               Sun'iy intellekt asosida tuzilgan personallashtirilgan dars rejasi, progress bar va haftalik maqsadlar
@@ -113,7 +117,7 @@
             </p>
             <span>Realtime analytics paneli</span>
           </article>
-          <article class="experience__card" data-animate>
+          <article class="experience__card" data-animate data-tilt>
             <h3>Futuristik makon</h3>
             <p>
               Apple Store ruhidagi yorug'lik dizayni, shaffof studiyalar va VR/AR laboratoriyalari bilim olishni ijodiy
@@ -121,7 +125,7 @@
             </p>
             <span>Immersiv dizayn</span>
           </article>
-          <article class="experience__card" data-animate>
+          <article class="experience__card" data-animate data-tilt>
             <h3>Global hamkorlik</h3>
             <p>
               Cambridge va Oxford universitetlari bilan hamkorlik dasturlari, xalqaro ustozlar va talabalar almashinuvi.
@@ -137,7 +141,7 @@
           <h2>Har bir yosh toifasi uchun kosmik aniq reja</h2>
         </div>
         <div class="programs__timeline">
-          <div class="programs__line"></div>
+          <div class="programs__line" aria-hidden="true"><span class="programs__line-progress"></span></div>
           <article class="programs__item" data-animate>
             <span class="programs__age">6-9 yosh</span>
             <h3>Future Explorers</h3>
@@ -205,8 +209,8 @@
             </div>
           </div>
         </div>
-        <div class="innovation__visual" data-animate>
-          <div class="innovation__orb"></div>
+        <div class="innovation__visual" data-animate data-parallax-y="-24">
+          <div class="innovation__orb" data-parallax-rotate="-18"></div>
           <div class="innovation__halo"></div>
           <div class="innovation__quote">
             <p>“Oxford Learning Centre — farzandingizning global tafakkur maydonchasi.”</p>
@@ -225,7 +229,7 @@
           </p>
         </div>
         <div class="community__showcase" data-animate>
-          <div class="community__gallery swiper">
+          <div class="community__gallery swiper" data-parallax-y="14">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <h3>Innovation Nights</h3>
@@ -243,16 +247,16 @@
             <div class="swiper-pagination"></div>
           </div>
           <aside class="community__details">
-            <div data-animate>
+            <div>
               <h4>Premium hamkorlar</h4>
               <p>British Council, Pearson, Cambridge Assessment va global edtech kompaniyalari bilan hamkorlik.</p>
             </div>
-            <div data-animate>
+            <div>
               <h4>Ijodkorlar sahnasi</h4>
               <p>@oxfordlc.uz Instagram hamjamiyatimiz o'quvchilar loyihalarini aks ettiradi.</p>
               <a href="https://instagram.com/oxfordlc.uz" target="_blank" rel="noopener">Instagramga o'tish</a>
             </div>
-            <div data-animate>
+            <div>
               <h4>Telegram yangiliklari</h4>
               <p>Yangiliklar, chegirmalar va yopiq master-klasslar uchun @oxfordyangibozor kanaliga qo'shiling.</p>
               <a href="https://t.me/oxfordyangibozor" target="_blank" rel="noopener">Telegramga qo'shilish</a>
@@ -261,7 +265,7 @@
         </div>
       </section>
 
-      <section class="section highlight" data-animate>
+      <section class="section highlight">
         <div class="highlight__badge">Premium Experience</div>
         <h2>
           Oxford Learning Centre — ilm, san'at va texnologiyani uyg'unlashtirgan Apple darajasidagi ta'lim markazi. Har
