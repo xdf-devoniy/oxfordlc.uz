@@ -2,32 +2,44 @@
 <html lang="uz">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oxford Learning Centre | Yangibozordagi intellektual markaz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oxford Learning Centre | Ilhomlantiruvchi ta'lim tajribasi</title>
     <meta
       name="description"
-      content="Oxford Learning Centre — zamonaviy ingliz tili, matematika va STEAM ta'limi markazi. Oxford uslubidagi immersiv darslar, xalqaro sertifikatlar va texnologik muhit."
+      content="Oxford Learning Centre — Yangibozorda Apple darajasidagi dizayn va texnologiyalar bilan jihozlangan premium ta'lim makoni. Immersiv darslar, kuchli mentorlik va kelajak kasblari uchun platforma."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles/main.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.34/bundled/lenis.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/split-type@0.3.3/dist/index.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="scripts/main.js"></script>
   </head>
   <body>
-    <div class="noise"></div>
-    <header class="nav">
+    <div class="bg-grid"></div>
+    <div class="bg-gradient"></div>
+
+    <header class="nav" data-animate>
       <div class="nav__logo">
         <img src="assets/logo-light.svg" alt="Oxford Learning Centre logotipi" />
       </div>
+      <button class="nav__toggle" aria-label="Navigatsiyani ochish">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav__links">
         <a href="#hero">Bosh sahifa</a>
-        <a href="#mission">Afzalliklar</a>
+        <a href="#experience">Afzalliklar</a>
         <a href="#programs">Kurslar</a>
         <a href="#innovation">Innovatsiya</a>
         <a href="#community">Hamjamiyat</a>
@@ -37,277 +49,279 @@
     </header>
 
     <main>
-      <section id="hero" class="hero">
-        <div class="hero__content">
-          <span class="hero__eyebrow">Oxford Learning Centre • Yangibozor</span>
-          <h1 class="hero__title">
-            Intellektual qudratni uyg'oting
-            <span>Oxford</span> metodikasi bilan.
+      <section id="hero" class="section hero">
+        <div class="hero__intro">
+          <span class="eyebrow" data-split>Oxford Learning Centre • Yangibozor</span>
+          <h1 class="hero__title" data-split>
+            Oxford uslubidagi immersiv ta'lim orqali kelajakni bugunoq kashf eting.
           </h1>
-          <p class="hero__subtitle">
-            Bizning futuristik kampusimizda har bir dars — bu kashfiyot. Neo-klassik Cambridge
-            darslaridan tortib, VR laboratoriyalarigacha bo'lgan yo'lda har bir o'quvchi o'z
-            potensialini to'liq ochadi.
+          <p data-animate>
+            Biz Apple darajasidagi dizayn, sun'iy intellekt yordamidagi mentorlik va futuristik laboratoriyalar orqali
+            har bir o'quvchi uchun shaxsiylashtirilgan ta'lim sayohatini yaratamiz.
           </p>
-          <div class="hero__cta-group">
-            <a href="#programs" class="btn btn--primary">Kurslarni ko'rish</a>
-            <a href="#contact" class="btn btn--ghost">Konsultatsiya olish</a>
+          <div class="hero__cta" data-animate>
+            <a class="btn btn--primary" href="#contact">Demo darsga yozilish</a>
+            <a class="btn btn--ghost" href="#programs">Kurslarni ko'rish</a>
           </div>
-          <div class="hero__stats">
-            <div>
-              <strong>1200+</strong>
-              <span>IELTS va CEFR natijalari bilan sertifikatlangan o'quvchilar</span>
-            </div>
-            <div>
-              <strong>98%</strong>
-              <span>Oxford metodikasi bilan muntazam natija o'sishi</span>
-            </div>
-            <div>
-              <strong>24/7</strong>
-              <span>Sun'iy intellekt yordamida individual mentorlik</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero__visual">
-          <div class="hero__orb"></div>
-          <div class="hero__glow"></div>
-          <div class="hero__card">
-            <img src="assets/logo-dark.svg" alt="Oxford Learning Centre" />
-            <p>
-              "Oxford Learning Centre — bu yerda kelajak ilmi bugungi kunga olib kelinadi."
-              <span>— Director's Insight</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="mission" class="mission">
-        <div class="section__header">
-          <span class="section__eyebrow">Nega biz?</span>
-          <h2>Yangilik, chuqurlik va ilhom uyg'unligi</h2>
-          <p>
-            Oxford Learning Centre o'quvchilarga aql bovar qilmas immersiv tajriba taqdim etadi:
-            lazerli taxtalar, real-time analytics va AI mentorlar orqali bilimga bo'lgan tashnalikni
-            kuchaytiramiz.
-          </p>
-        </div>
-        <div class="mission__grid">
-          <article class="mission__item">
-            <h3>Oxford DNA</h3>
-            <p>
-              Britaniya kurikulumi va O'zbekiston milliy dasturi uyg'unlashgan, dunyoqarashni kengaytiruvchi
-              interaktiv darslar.
-            </p>
-          </article>
-          <article class="mission__item">
-            <h3>Immersiv texnologiyalar</h3>
-            <p>
-              VR laboratoriyalari, AR dialog mashqlari va AI yozish ko'makchisi bilan har bir mavzu
-              real hayotga tatbiq qilinadi.
-            </p>
-          </article>
-          <article class="mission__item">
-            <h3>Holistic development</h3>
-            <p>
-              Edu-coaching, akademik psixolog va soft skills studiyalari orqali har tomonlama rivojlanish.
-            </p>
-          </article>
-          <article class="mission__item">
-            <h3>Global akkreditatsiya</h3>
-            <p>
-              IELTS, SAT, CEFR va STEAM olimpiadalari uchun xalqaro trenerlar va hamkor universitetlar.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="programs" class="programs">
-        <div class="section__header">
-          <span class="section__eyebrow">Kurslarimiz</span>
-          <h2>Har bir yosh va maqsad uchun dizayn qilingan dasturlar</h2>
-        </div>
-        <div class="programs__timeline">
-          <div class="timeline__line"></div>
-          <article class="programs__card">
-            <span class="programs__age">6-10 yosh</span>
-            <h3>Future Explorers</h3>
-            <p>
-              STEAM laboratoriyasi va Cambridge Primary English integratsiyasi bilan bolalarda kreativ
-              tafakkur va ingliz tilini chuqurlashtirish.
-            </p>
-            <ul>
-              <li>Robototexnika va kodlash asoslari</li>
-              <li>Storytelling va drama orqali til amaliyoti</li>
-              <li>Eksperimental matematika</li>
-            </ul>
-          </article>
-          <article class="programs__card">
-            <span class="programs__age">11-15 yosh</span>
-            <h3>Oxford Scholars</h3>
-            <p>
-              Project-based o'qitish, Cambridge Lower Secondary va TED-formatdagi nutq darslari.
-            </p>
-            <ul>
-              <li>Academic Writing Studio</li>
-              <li>Debate & Leadership klubi</li>
-              <li>AI & Data Literacy workshoplari</li>
-            </ul>
-          </article>
-          <article class="programs__card">
-            <span class="programs__age">16+</span>
-            <h3>Global Achievers</h3>
-            <p>
-              IELTS, SAT, CEFR C1 tayyorlovlari bilan birga, universitetlar uchun portfolio mentoring.
-            </p>
-            <ul>
-              <li>Individual IELTS bootcamp</li>
-              <li>Oxbridge essay klinikalari</li>
-              <li>Start-up incubation lab</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="innovation" class="innovation">
-        <div class="innovation__content">
-          <div class="section__header section__header--light">
-            <span class="section__eyebrow">Innovatsion muhit</span>
-            <h2>Har bir metr kvadrat — kelajak laboratoriyasi</h2>
-            <p>
-              Kampusimizda Apple uslubidagi minimalizm va futuristik texnologiyalar uyg'unlashgan.
-              Smart devorlar, dinamik yorug'lik dizayni va 3D audio zonalar o'quvchilarni kashfiyotga
-              undaydi.
-            </p>
-          </div>
-          <ul class="innovation__list">
-            <li><strong>Holografik taqdimotlar:</strong> murakkab mavzularni 3D ko'rinishda tasvirlaymiz.</li>
-            <li><strong>Data-driven analytics:</strong> har bir o'quvchi uchun 360° rivojlanish paneli.</li>
-            <li><strong>Mentorlar klasteri:</strong> Cambridge, Oxford va MIT bitiruvchilari.</li>
-            <li><strong>Community nights:</strong> TED-style pitch va ilmiy shoular.</li>
+          <ul class="hero__badges" data-animate>
+            <li>IELTS, SAT va Coding laboratoriyalari</li>
+            <li>VR tajribalar va AR speaking mashg'ulotlari</li>
+            <li>24/7 mentorlik va progress paneli</li>
           </ul>
         </div>
-        <div class="innovation__visual">
-          <div class="innovation__sphere"></div>
+        <div class="hero__visual" data-animate>
+          <div class="hero__planet">
+            <div class="hero__shine"></div>
+            <img src="assets/logo-dark.svg" alt="Oxford Learning Centre markasi" />
+          </div>
+          <div class="hero__card">
+            <p>“Farzandingizni global sahnaga tayyorlaydigan premium ta'lim makoni.”</p>
+            <span>— Oxford Learning Centre direktori</span>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dt data-value="1200" data-suffix="+">1200+</dt>
+              <dd>Xalqaro sertifikat olgan o'quvchilar</dd>
+            </div>
+            <div>
+              <dt data-value="98" data-suffix="%">98%</dt>
+              <dd>Natija o'sishi qayd etilgan oilalar</dd>
+            </div>
+            <div>
+              <dt data-value="15" data-suffix="+">15+</dt>
+              <dd>Premium laboratoriya va media zonalar</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="section__header" data-animate>
+          <span class="eyebrow">Bizning kuchimiz</span>
+          <h2>Ilhomlantiruvchi ta'lim ekotizimi</h2>
+          <p>
+            Yangibozordagi yagona markaz bo'lib, biz britan kurikulumi, immersiv texnologiyalar va xalqaro hamjamiyatni
+            birlashtiramiz. Har bir o'quvchi uchun maqsadli yo'l xaritasi yaratiladi.
+          </p>
+        </div>
+        <div class="experience__grid">
+          <article class="experience__card" data-animate>
+            <h3>AI mentorlik</h3>
+            <p>
+              Sun'iy intellekt asosida tuzilgan personallashtirilgan dars rejasi, progress bar va haftalik maqsadlar
+              bilan doimiy nazorat.
+            </p>
+            <span>Realtime analytics paneli</span>
+          </article>
+          <article class="experience__card" data-animate>
+            <h3>Futuristik makon</h3>
+            <p>
+              Apple Store ruhidagi yorug'lik dizayni, shaffof studiyalar va VR/AR laboratoriyalari bilim olishni ijodiy
+              sarguzashtga aylantiradi.
+            </p>
+            <span>Immersiv dizayn</span>
+          </article>
+          <article class="experience__card" data-animate>
+            <h3>Global hamkorlik</h3>
+            <p>
+              Cambridge va Oxford universitetlari bilan hamkorlik dasturlari, xalqaro ustozlar va talabalar almashinuvi.
+            </p>
+            <span>Worldwide network</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="programs" class="section programs">
+        <div class="section__header" data-animate>
+          <span class="eyebrow">Kurslarimiz</span>
+          <h2>Har bir yosh toifasi uchun kosmik aniq reja</h2>
+        </div>
+        <div class="programs__timeline">
+          <div class="programs__line"></div>
+          <article class="programs__item" data-animate>
+            <span class="programs__age">6-9 yosh</span>
+            <h3>Future Explorers</h3>
+            <p>
+              STEAM va ingliz tili integratsiyasi orqali bolalarda kreativlik, kodlash va nutq ko'nikmalarini erta bosqichda
+              uyg'otamiz.
+            </p>
+            <ul>
+              <li>Robototexnika laboratoriyasi</li>
+              <li>Storytelling va drama sessiyalari</li>
+              <li>Gamified matematika</li>
+            </ul>
+          </article>
+          <article class="programs__item" data-animate>
+            <span class="programs__age">10-14 yosh</span>
+            <h3>Oxford Scholars</h3>
+            <p>
+              Cambridge Lower Secondary asosidagi fanlar, TED formatidagi sahna ko'nikmalari va yozma mahorat bo'yicha
+              intensivlar.
+            </p>
+            <ul>
+              <li>Debate & Leadership klubi</li>
+              <li>AI & Data Literacy bootcamp</li>
+              <li>Design thinking hackathonlari</li>
+            </ul>
+          </article>
+          <article class="programs__item" data-animate>
+            <span class="programs__age">15+ yosh</span>
+            <h3>Global Achievers</h3>
+            <p>
+              IELTS, SAT, CEFR va portfolio tayyorlash bo'yicha individual murabbiylik, oliy o'quv yurtlariga kirish
+              strategiyalari.
+            </p>
+            <ul>
+              <li>Oxbridge essay klinikalari</li>
+              <li>Startup incubation lab</li>
+              <li>Harvard & MIT mentorlari</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="innovation" class="section innovation">
+        <div class="innovation__content">
+          <div class="section__header" data-animate>
+            <span class="eyebrow">Innovatsion muhit</span>
+            <h2>Har bir metr kvadrat — kelajak laboratoriyasi</h2>
+            <p>
+              Smart oynalar, biosensorli partalar va 3D audio zonalar bilan jihozlangan makon har bir darsni immersiv
+              sahnaga aylantiradi.
+            </p>
+          </div>
+          <div class="innovation__list">
+            <div class="innovation__item" data-animate>
+              <strong>Holografik taqdimotlar</strong>
+              <p>Murakkab mavzularni 3D formatda ko'rib chiqish va interaktiv tajriba.</p>
+            </div>
+            <div class="innovation__item" data-animate>
+              <strong>Biofeedback studiyasi</strong>
+              <p>Fokus va stress ko'rsatkichlarini real vaqt rejimida kuzatib, shaxsiy reja tuzamiz.</p>
+            </div>
+            <div class="innovation__item" data-animate>
+              <strong>Apple-style media lab</strong>
+              <p>Podcast, video va dizayn loyihalari uchun professional studiyalar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="innovation__visual" data-animate>
+          <div class="innovation__orb"></div>
           <div class="innovation__halo"></div>
           <div class="innovation__quote">
-            <p>
-              “Oxford Learning Centre — Yangibozordagi eng kuchli akademik ekotizim. Farzandingizning
-              kelajagi bugunoq shu yerda shakllanadi.”
-            </p>
+            <p>“Oxford Learning Centre — farzandingizning global tafakkur maydonchasi.”</p>
             <span>— Ota-onalar klubi fikri</span>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="experience">
-        <div class="section__header">
-          <span class="section__eyebrow">Tajriba</span>
-          <h2>O'quvchi safari: birinchi qadamdan global sahnaga</h2>
-        </div>
-        <div class="experience__steps">
-          <div class="experience__step">
-            <span>01</span>
-            <h3>Discovery day</h3>
-            <p>
-              Diagnostik testlar, shaxsiyat xaritasi va qiziqishlar tahlili orqali individual ta'lim yo'li
-              tuzamiz.
-            </p>
-          </div>
-          <div class="experience__step">
-            <span>02</span>
-            <h3>Immersive learning</h3>
-            <p>
-              VR laboratoriyalar, masterklasslar va global ekspertlar bilan haftalik sessiyalar orqali
-              chuqur bilim.
-            </p>
-          </div>
-          <div class="experience__step">
-            <span>03</span>
-            <h3>Global showcase</h3>
-            <p>
-              Startap tanlovlari, ilmiy konferensiyalar va xalqaro imtihonlarda yuqori natijalar.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="community" class="community">
-        <div class="community__left">
-          <div class="section__header section__header--light">
-            <span class="section__eyebrow">Hamjamiyat</span>
-            <h2>Oxford Learning Centre — ilhom bilan yashaydigan oilalar</h2>
-            <p>
-              Har hafta Innovatsion laboratoriyalar, Oxford Book Club, IELTS Night va Future Parents Club
-              sessiyalari o'tkaziladi. Biz o'quvchilarni nafaqat ta'limga, balki global tafakkurga tayyorlaymiz.
-            </p>
-          </div>
-          <div class="community__socials">
-            <a href="https://instagram.com/oxfordlc.uz" target="_blank" rel="noopener">@oxfordlc.uz • Instagram</a>
-            <a href="https://t.me/oxfordyangibozor" target="_blank" rel="noopener">@oxfordyangibozor • Telegram</a>
-          </div>
-        </div>
-        <div class="community__right">
-          <div class="community__card">
-            <h3>Mentorlarimiz</h3>
-            <p>
-              <strong>Cambridge CELTA sertifikatlangan</strong> ingliz tili ustozlari, <strong>Oxford MBA</strong>
-              mutaxassislari va <strong>Google Certified</strong> trenerlar farzandingiz bilan ishlaydi.
-            </p>
-          </div>
-          <div class="community__card">
-            <h3>Natijalar</h3>
-            <ul>
-              <li>IELTS 7.5+ ko'rsatkichiga erishgan o'quvchilar ulushi — 68%</li>
-              <li>STEAM olimpiadalarida 120 ta medal</li>
-              <li>Top 50 universitetlarga 35 ta grant</li>
-            </ul>
-          </div>
-          <div class="community__card community__card--accent">
-            <h3>Oxford Masterclasses</h3>
-            <p>
-              Har oy London va Singapurlik ekspertlar bilan eksklyuziv masterklasslar hamda networking kechalari.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta" id="cta">
-        <div class="cta__content">
-          <h2>Farzandingiz kelajagini bugun boshlang</h2>
+      <section id="community" class="section community">
+        <div class="section__header" data-animate>
+          <span class="eyebrow">Hamjamiyat va voqealar</span>
+          <h2>Ilhomlantiruvchi sahna va networking</h2>
           <p>
-            Oxford Learning Centre bilan kelajakdagi universitet va karyera muvaffaqiyati uchun solid platforma quriladi.
-            Qabul cheklangan — individual suhbat uchun ro'yxatdan o'ting.
+            Har oy master-klasslar, TEDx formatidagi pitching kechalari va global universitetlar bilan jonli muloqotlar
+            tashkil etamiz.
           </p>
-          <div class="cta__actions">
-            <a href="https://t.me/oxfordyangibozor" class="btn btn--primary" target="_blank" rel="noopener">Telegram orqali bog'lanish</a>
-            <a href="tel:+998507770055" class="btn btn--ghost">Telefon: +998 50 777 00 55</a>
+        </div>
+        <div class="community__showcase" data-animate>
+          <div class="community__gallery swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3>Innovation Nights</h3>
+                <p>Startup prototiplari va ilmiy loyihalar uchun live pitching marafoni.</p>
+              </div>
+              <div class="swiper-slide">
+                <h3>Global Mentorship</h3>
+                <p>Oxford va MIT professorlari bilan onlayn master-klasslar va mentoring sessiyalari.</p>
+              </div>
+              <div class="swiper-slide">
+                <h3>Future Skills Expo</h3>
+                <p>AR/VR tajribalari, AI lab taqdimotlari va dizayn sprintlaridan iborat festival.</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
+          <aside class="community__details">
+            <div data-animate>
+              <h4>Premium hamkorlar</h4>
+              <p>British Council, Pearson, Cambridge Assessment va global edtech kompaniyalari bilan hamkorlik.</p>
+            </div>
+            <div data-animate>
+              <h4>Ijodkorlar sahnasi</h4>
+              <p>@oxfordlc.uz Instagram hamjamiyatimiz o'quvchilar loyihalarini aks ettiradi.</p>
+              <a href="https://instagram.com/oxfordlc.uz" target="_blank" rel="noopener">Instagramga o'tish</a>
+            </div>
+            <div data-animate>
+              <h4>Telegram yangiliklari</h4>
+              <p>Yangiliklar, chegirmalar va yopiq master-klasslar uchun @oxfordyangibozor kanaliga qo'shiling.</p>
+              <a href="https://t.me/oxfordyangibozor" target="_blank" rel="noopener">Telegramga qo'shilish</a>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <div class="contact__info">
-          <div class="section__header">
-            <span class="section__eyebrow">Manzil & aloqa</span>
-            <h2>Oxford Learning Centre bilan aloqaga chiqing</h2>
-            <p>
-              Savollaringiz bormi? Bizning konsultantlarimiz sizga 24 soatda javob beradi. Birinchi sinov darsini bepul rejalashtiring!
-            </p>
-          </div>
-          <ul class="contact__list">
-            <li><strong>Telefon:</strong> <a href="tel:+998507770055">+998 50 777 00 55</a></li>
-            <li><strong>Instagram:</strong> <a href="https://instagram.com/oxfordlc.uz" target="_blank" rel="noopener">@oxfordlc.uz</a></li>
-            <li><strong>Telegram:</strong> <a href="https://t.me/oxfordyangibozor" target="_blank" rel="noopener">@oxfordyangibozor</a></li>
-            <li><strong>Manzil koordinatalari:</strong> 41.716445, 60.524603 — Yangibozor markazi</li>
-          </ul>
+      <section class="section highlight" data-animate>
+        <div class="highlight__badge">Premium Experience</div>
+        <h2>
+          Oxford Learning Centre — ilm, san'at va texnologiyani uyg'unlashtirgan Apple darajasidagi ta'lim markazi. Har
+          bir o'quvchi uchun maxsus sahna yaratiladi.
+        </h2>
+        <a class="btn btn--primary" href="tel:+998507770055">Hozir qo'ng'iroq qilish</a>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section__header" data-animate>
+          <span class="eyebrow">Bog'lanish</span>
+          <h2>Oxford bilan kelajakni rejalashtiring</h2>
+          <p>Mutaxassislarimiz sizga mos dastur va individual yo'l xaritasini tayyorlab beradi.</p>
         </div>
-        <div class="contact__map">
-          <iframe
-            title="Oxford Learning Centre manzili"
-            src="https://www.google.com/maps?q=41.716445,60.524603&output=embed"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+        <div class="contact__grid">
+          <form class="contact__form" data-animate>
+            <label>
+              Ismingiz
+              <input type="text" name="name" placeholder="To'liq ism" required />
+            </label>
+            <label>
+              Telefon raqam
+              <input type="tel" name="phone" placeholder="50 777 00 55" required />
+            </label>
+            <label>
+              Qiziqish yo'nalishi
+              <select name="interest">
+                <option value="ielts">IELTS / SAT</option>
+                <option value="steam">STEAM & Coding</option>
+                <option value="kids">Bolalar dasturlari</option>
+                <option value="mentorship">Mentorlik</option>
+              </select>
+            </label>
+            <label>
+              Izoh
+              <textarea name="message" rows="4" placeholder="Sizni qiziqtirayotgan savollar..."></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary">Konsultatsiya so'rash</button>
+          </form>
+          <div class="contact__info" data-animate>
+            <div>
+              <h3>Manzil</h3>
+              <p>41.716445, 60.524603 — Yangibozor markazi, futuristik kampus.</p>
+            </div>
+            <div>
+              <h3>Aloqa</h3>
+              <p><a href="tel:+998507770055">+998 50 777 00 55</a></p>
+              <p><a href="mailto:hello@oxfordlc.uz">hello@oxfordlc.uz</a></p>
+            </div>
+            <div>
+              <h3>Soat</h3>
+              <p>Dushanba - Yakshanba · 08:00 — 21:00</p>
+            </div>
+            <iframe
+              title="Oxford Learning Centre xaritasi"
+              src="https://maps.google.com/maps?q=41.716445,60.524603&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -315,18 +329,14 @@
     <footer class="footer">
       <div class="footer__brand">
         <img src="assets/logo-light.svg" alt="Oxford Learning Centre" />
-        <p>Oxford Learning Centre © 2024. Ilhom bilan yaratilgan.</p>
+        <p>Oxford Learning Centre — Yangibozorda kelajak ta'limining markazi.</p>
       </div>
       <div class="footer__links">
-        <a href="#mission">Metodika</a>
-        <a href="#programs">Kurslar</a>
-        <a href="#community">Hamjamiyat</a>
-        <a href="#contact">Bog'lanish</a>
+        <a href="https://instagram.com/oxfordlc.uz" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://t.me/oxfordyangibozor" target="_blank" rel="noopener">Telegram</a>
+        <a href="tel:+998507770055">Telefon</a>
       </div>
-      <div class="footer__meta">
-        <span>Yangibozor • 41.716445, 60.524603</span>
-        <span>Telefon: <a href="tel:+998507770055">+998 50 777 00 55</a></span>
-      </div>
+      <span class="footer__copy">© Oxford Learning Centre, 2024</span>
     </footer>
   </body>
 </html>
